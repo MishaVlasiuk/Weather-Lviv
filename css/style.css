@@ -1,0 +1,35 @@
+
+body{
+	background:url("img/back1.jpg");
+	background-size: 100%;
+}
+p {
+	font-family:Verdana, Tohoma, sans-serif;
+	font-weight:200;
+	text-decoration:none;
+	color:white;
+	
+}
+#header {
+	color:white;
+}
+.content{
+	margin-top:80px;
+	margin-left:120px;
+}
+.search {
+	
+}
+table {
+	font-family:Verdana;
+	font-size:17px;
+	font-weight:bold;
+	margin-top:60px;
+	width:150px;
+	height:150px;
+	border:1px;
+	color:white;
+	background:black;
+	box-shadow: 0 0 0 2px #1f2e2e, 0 0 0 2px #1f2e2e, 0 0 0 5px #1f2e2e, 0 0 6px 10px #1f2e2e ;
+	opacity: 0.8;
+}
