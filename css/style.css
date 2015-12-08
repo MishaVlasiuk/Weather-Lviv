@@ -1,35 +1,34 @@
-
-body{
-	background:url("img/back1.jpg");
+body {
+	background-image: url("img/back1.jpg");
 	background-size: 100%;
 }
 p {
-	font-family:Verdana, Tohoma, sans-serif;
-	font-weight:200;
+	font-family:Verdana;
 	text-decoration:none;
 	color:white;
-	
 }
-#header {
-	color:white;
-}
-.content{
+header{
+	font-family: 'Slabo 27px', serif;
+	font-size:18px;
 	margin-top:80px;
 	margin-left:120px;
+	color:white;
 }
 .search {
-	
+	font-family: 'Slabo 27px', serif;
+	font-size:27px;
+	margin-top:90px;
+	margin-left:120px;
 }
 table {
 	font-family:Verdana;
-	font-size:17px;
+	font-size:20px;
 	font-weight:bold;
 	margin-top:60px;
-	width:150px;
-	height:150px;
-	border:1px;
+	margin-left:100px;
+	width:400px;
+	height:400px;
 	color:white;
 	background:black;
-	box-shadow: 0 0 0 2px #1f2e2e, 0 0 0 2px #1f2e2e, 0 0 0 5px #1f2e2e, 0 0 6px 10px #1f2e2e ;
 	opacity: 0.8;
 }
