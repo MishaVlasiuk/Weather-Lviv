@@ -6,22 +6,16 @@
 		<link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-				<div class="search">
-	                <form name="Location" action="#" method="get">
-	                    <input type="text" placeholder="Search city">
-	                    <button type="submit">Search</button>
-	                </form>
-	           </div>
 			<div id="wrapper">
 	      <section id="today">
 	      <article id="location">
-	        <p id="city">Lviv</p> <--location-->
+	        <p id="loc"></p> <!-- SCRIPTS HERE! -->
 	        <p id="country">Ukraine</p>
 	        <p id="date">Sunday, December 13</p>
 	      </article>
 		  </div>
 			<div>
-				<table border="0">
+				<table>
 					<tr><th></th><th colspan="2">Day</th><th colspan="2">Night</th></tr>
 					<tr><td>Today</td><td id="todayTemp"></td><td></td><td></td><td></td></tr>
 					<tr><td>Tomorrow</td><td id="tomorrowTemp"></td><td></td><td></td><td></td></tr>
@@ -29,6 +23,7 @@
 				</table>
 			</div>
 		<script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="scripts/index.js"></script>
+	    <script type="text/javascript" src="scripts/index.js"></script>
+	    <script type="text/javascript" src="scripts/location.js"></script>
 </body>
 </html>
