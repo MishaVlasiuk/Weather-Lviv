@@ -15,15 +15,40 @@
 	      </article>
 		  </div>
 			<div>
-				<table>
+				<table id="day">
 					<tr><th></th><th colspan="2">Day</th><th colspan="2">Night</th></tr>
-					<tr><td>Today</td><td id="todayTemp"></td><td id="iconToday"></td><td></td><td></td></tr>
-					<tr><td>Tomorrow</td><td id="tomorrowTemp"></td><td id="iconTomorrow"></td><td></td><td></td></tr>
-					<tr><td>The Day After<br>Tomorrow</td><td id="aftertomorrowTemp"></td><td id="iconAfterTomorrow"></td><td></td><td></td></tr>
+					<tr><td class="date_weather">Today</td><td class="description" id="day_0"></td><td class="image_weather" alt="image_weather"></td><td class="temperature_weather"></td><td></td></tr>
+					<tr><td class="date_weather">Tomorrow</td><td class="description" id="day_1"></td><td class="image_weather" alt="image_weather"></td><td class="temperature_weather"></td><td></td></tr>
+					<tr><td class="date_weather">The Day After<br>Tomorrow</td><td id="day_2"></td><td class="image_weather" alt="image weather"></td><td class="temperature_weather"></td><td></td></tr>
 				</table>
 			</div>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    	<script src="scripts/namecity.js"></script>
 		<script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-	    <script type="text/javascript" src="scripts/index.js"></script>
-	    <script type="text/javascript" src="scripts/location.js"></script>
+	    <script type="text/javascript" src="scripts/geolocation.js"></script>
+    	<script type="text/javascript" src="scripts/script.js"></script>
+
 </body>
 </html>
+
+<div id="day">
+						<div id="day_0">
+							<div class="date_weather"></div> 
+							<div class="description"></div>
+							<div class="image_weather" alt="image_weather"></div>
+							<div class="temperature_weather"></div>
+							
+						</div>
+						<div id="day_1">
+							<div class="date_weather"></div> 
+							<div class="description"></div>
+							<div class="image_weather" alt="image_weather"></div>
+							<div class="temperature_weather"></div>
+						</div>
+						<div id="day_2">
+							<div class="date_weather"></div> 
+							<div class="description"></div>
+							<div class="image_weather" alt="image weather"></div>
+							<div class="temperature_weather"></div>
+						</div>
+					</div>
