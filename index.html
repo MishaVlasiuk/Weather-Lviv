@@ -1,43 +1,38 @@
 <!doctype html>
 <html>
-<head>
-		<meta charset="utf-8"/>
-		<title>Weather in Lviv</title>
-		<link href="css/style.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-			<div id="wrapper">
-	      <section id="today">
-	      <article id="location">
-	        <p id="loc"></p> <!-- SCRIPTS HERE! -->
-	        <p id="country">Ukraine</p> <!-- SCRIPTS HERE! -->
-	        <p id="date">Sunday, December 13</p> <!-- SCRIPTS HERE! -->
-	      </article>
-		  </div>
-			<div>
-				<table id="day">
-					<tr><th></th><th colspan="2">Day</th><th colspan="2">Night</th></tr>
-					<tr><td class="date_weather">Today</td><td class="description" id="day_0"></td><td class="image_weather" alt="image_weather"></td><td class="temperature_weather"></td><td></td></tr>
-					<tr><td class="date_weather">Tomorrow</td><td class="description" id="day_1"></td><td class="image_weather" alt="image_weather"></td><td class="temperature_weather"></td><td></td></tr>
-					<tr><td class="date_weather">The Day After<br>Tomorrow</td><td id="day_2"></td><td class="image_weather" alt="image weather"></td><td class="temperature_weather"></td><td></td></tr>
-				</table>
-			</div>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    	<script src="scripts/namecity.js"></script>
-		<script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-	    <script type="text/javascript" src="scripts/geolocation.js"></script>
-    	<script type="text/javascript" src="scripts/script.js"></script>
-
-</body>
-</html>
-
-<div id="day">
+	<head>
+		<title>Weather.net</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<link type="text/css" rel="stylesheet" href="css/style.css">
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<h1>Weather.net</h1>
+			</header>
+			<section>
+				<div id="content">
+				  <div id="first_line_section">
+						<form id="change_city">
+							<input type="text" id="input_city_name" name="cityname" size="22" required 
+							placeholder="Введіть інше місто"><br>
+							<div id="btn">
+								<input type="button" id="btn_get" value="Змінити">
+								<input type="reset" id="btn_reset" value="Відмінити">
+							</div>
+						</form>
+						<div id="city_weather"></div>
+					</div>
+					<div id="day">
 						<div id="day_0">
 							<div class="date_weather"></div> 
 							<div class="description"></div>
 							<div class="image_weather" alt="image_weather"></div>
 							<div class="temperature_weather"></div>
-							
 						</div>
 						<div id="day_1">
 							<div class="date_weather"></div> 
@@ -52,3 +47,15 @@
 							<div class="temperature_weather"></div>
 						</div>
 					</div>
+				</div>
+			</section>
+			<footer>
+				<div id="author">Created by&nbsp<a href="mailto:andrianov.vitali@gmail.com">Vitali Andrianov</a> <span id="year">2015</span></div>
+			</footer>
+		</div>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="scripts/namecity.js"></script>
+		<script src="scripts/geolocation.js"></script>
+    <script src="scripts/script.js"></script>
+	</body>
+</html>
